@@ -1,5 +1,7 @@
 .container {
-  padding: 0 2rem;
+  /* border: solid 5px #000;
+  border-color: transparent transparent #000 transparent; */
+  /* border-radius: 0 0 240px 50%/60px; */
 }
 
 .main {
