@@ -35,10 +35,6 @@ const Home: NextPage = () => {
       <Roadmap />
       <Team />
       <FaqComp />
-
-      <main>
-        <h1>Rosbourne</h1>
-      </main>
     </div>
   );
 };

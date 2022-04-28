@@ -1,5 +1,7 @@
 import React from "react";
 const Faq = require("react-faq-component");
+import { Box, Text, Heading, Center, Flex, Spacer } from "@chakra-ui/react";
+import { AiOutlineCaretDown } from "react-icons/ai";
 
 const data = {
   title: "FAQ (How it works)",
@@ -30,25 +32,44 @@ const data = {
   ],
 };
 
-const styles = {
-  // bgColor: 'white',
-  titleTextColor: "blue",
-  rowTitleColor: "blue",
-  // rowContentColor: 'grey',
-  // arrowColor: "red",
-};
-
-const config = {
-  animate: true,
-  arrowIcon: "V",
-  tabFocus: true,
-};
-
 const FaqComp = () => {
   return (
-    <div>
-      <Faq data={data} />
-    </div>
+    // <div>
+    //   <Faq styles={styles} config={config} />
+    // </div>
+
+    <Box w="100%" height="900" bg="brand.900" p={10}>
+      <Center bg="teal" h="100px" color="white" borderRadius="radii.lg" my={20}>
+        <Heading color="" fontSize="8xl" fontFamily="font.heading">
+          {data.title}
+        </Heading>
+      </Center>
+
+      {data.rows.map((item) => {
+        return (
+          <Box key={item.title}>
+            <Box
+              bg="teal"
+              h="100px"
+              color="white"
+              borderRadius="radii.lg"
+              my={5}
+              cursor="pointer"
+            >
+              <Flex justifyItems="space-between" alignItems="center" px={20}>
+                <Heading p="4">{item.title}</Heading>
+                <Spacer />
+                <Text p="4">
+                  <AiOutlineCaretDown size={40} />
+                </Text>
+              </Flex>
+            </Box>
+
+            <Text display="none">{item.content}</Text>
+          </Box>
+        );
+      })}
+    </Box>
   );
 };
 

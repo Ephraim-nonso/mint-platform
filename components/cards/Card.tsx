@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { Badge } from "@chakra-ui/react";
 import First from "../../assets/6.png";
@@ -53,7 +53,15 @@ function Card() {
   ];
 
   return properties.map((property) => (
-    <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
+    <Box
+      maxW="sm"
+      borderWidth="1px"
+      borderRadius="lg"
+      overflow="hidden"
+      key={property.title}
+      fontSize="2xl"
+      fontFamily="font.body"
+    >
       <Image
         src={property.imageUrl}
         alt={property.imageAlt}
@@ -62,28 +70,22 @@ function Card() {
       />
 
       <Box p="6">
-        <Box
-          mt="1"
-          fontWeight="semibold"
-          as="h4"
-          lineHeight="tight"
-          isTruncated
-        >
+        <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
           {property.title}
         </Box>
 
         <Box>
-          {property.formattedPrice}
-          <Box as="span" color="gray.600" fontSize="sm">
+          <Text color="white">{property.formattedPrice}</Text>
+          {/* <Box as="span" color="gray.600" fontSize="sm">
             / wk
-          </Box>
+          </Box> */}
         </Box>
 
-        <Box display="flex" mt="2" alignItems="center">
+        {/* <Box display="flex" mt="2" alignItems="center">
           <Box as="span" ml="2" color="gray.600" fontSize="sm">
             {property.reviewCount} reviews
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   ));
