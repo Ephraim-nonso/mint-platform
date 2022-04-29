@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
 import { Box, Center, Heading } from "@chakra-ui/react";
-import Card from "../cards/Card";
+// import Card from "../cards/Card";
 
 const Team: NextPage = () => {
   return (
@@ -12,9 +12,7 @@ const Team: NextPage = () => {
         </Heading>
       </Center>
 
-      <Center>
-        <Card />
-      </Center>
+      <Center></Center>
     </Box>
   );
 };
