@@ -16,6 +16,7 @@
     "@fontsource/lobster": "^4.5.5",
     "@fontsource/merriweather": "^4.5.8",
     "@fontsource/rubik-wet-paint": "^4.5.0",
+    "@netlify/plugin-nextjs": "^4.6.0",
     "framer-motion": "^6",
     "next": "12.1.5",
     "react": "18.0.0",
