@@ -3,17 +3,18 @@ import Layout from "../components/Layout/Layout";
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 // 1. Import the extendTheme function
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
 import "@fontsource/rubik-wet-paint";
 import "@fontsource/bangers";
 import "@fontsource/merriweather";
 
 const colors = {
   brand: {
-    900: "#005555",
-    800: "#069A8E",
-    700: "#A1E3D8",
-    500: "#F7FF93",
+    900: "#000A3C",
+    800: "#1B2C79",
+    700: "#0b1d6c",
+    500: "#0C2475",
+    300: "#FD6383",
   },
 };
 const fonts = {
@@ -33,7 +34,10 @@ const borderRadius = {
   },
 };
 
-const theme = extendTheme({ colors, fonts, borderRadius });
+const theme = extendTheme(
+  { colors, fonts, borderRadius },
+  withDefaultColorScheme({ colorScheme: "brand", components: ["Button"] })
+);
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

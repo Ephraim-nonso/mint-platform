@@ -1,10 +1,31 @@
 import { NextPage } from "next";
 import React from "react";
 import { Heading, Box, Center, Text } from "@chakra-ui/react";
+import BgImg from "../../assets/bg.jpg";
+import Image from "next/image";
+import Navbar from "../navbar/Navbar";
 
 const Hero: NextPage = () => {
   return (
-    <Box w="100%" height="800" bg="brand.900" p={10} fontFamily="font.body">
+    <Box
+      w="100%"
+      height="800"
+      bg="brand.900"
+      fontFamily="font.body"
+      // bgImage="url('../..assets/bg.jpg')"
+      // bgPosition="center"
+      // bgRepeat="no-repeat"
+    >
+      <Navbar />
+      <Image
+        src={BgImg}
+        alt="bg-img"
+        layout="responsive"
+        objectFit="cover"
+        placeholder="blur"
+      />
+
+      {/* 
       <Center
         bg="teal"
         h="200px"
@@ -24,7 +45,7 @@ const Hero: NextPage = () => {
           races, they are human, cyborg, and inu living in the dystopian
           metropolis of Oakalis City.
         </Text>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

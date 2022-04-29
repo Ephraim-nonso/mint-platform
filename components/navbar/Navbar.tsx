@@ -15,11 +15,13 @@ const Navbar = () => {
             </Text>
           </Link>
           <Spacer />
-          <Link href="/mint">
-            <Button colorScheme="teal" size="lg">
-              Mint
-            </Button>
-          </Link>
+          <Box>
+            <Link href="/mint">
+              <Button bg="brand.300" size="lg">
+                Mint
+              </Button>
+            </Link>
+          </Box>
         </Flex>
       </Box>
     </VStack>

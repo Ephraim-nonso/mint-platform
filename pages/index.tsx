@@ -21,13 +21,14 @@ import FaqComp from "../components/faq/Faq";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    // <div >
+    <Box className={styles.container}>
       <Head>
         <title>Rosbourne</title>
         <meta name="description" content="Rosbourne NFT" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
 
       <About />
@@ -35,7 +36,7 @@ const Home: NextPage = () => {
       <Roadmap />
       <Team />
       <FaqComp />
-    </div>
+    </Box>
   );
 };
 

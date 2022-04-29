@@ -1,52 +1,70 @@
 import { NextPage } from "next";
 import React from "react";
 import { Box, Grid, GridItem, Text, Center, Heading } from "@chakra-ui/react";
+import Styles from "./Roadmap.module.css";
 
 const Roadmap: NextPage = () => {
   return (
-    <Box w="100%" height="900" bg="brand.900" p={10}>
-      <Center bg="teal" h="100px" color="white" borderRadius="radii.lg" my={20}>
-        <Heading color="" fontSize="8xl" fontFamily="font.heading">
+    <Box w="100%" height="1000" bg="brand.900" p={5}>
+      <Center h="100px" color="white" borderRadius="radii.lg" my={20}>
+        <Heading fontSize="7xl" fontFamily="font.heading" color="brand.300">
           Our Roadmap
         </Heading>
       </Center>
 
       <Center p={10} fontFamily="font.body" color="white">
-        <Text fontSize="2xl">
-          Rosbourne is a collection of 3k genesis avatars consist of 3 different
-          races, they are human, cyborg, and inu living in the dystopian
-          metropolis of Oakalis City.
-        </Text>
-        <Text fontSize="2xl" borderLeft="1px" borderColor="gray.200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          optio itaque magni nesciunt cupiditate aperiam recusandae rem
-          praesentium incidunt voluptas!
-        </Text>
-      </Center>
+        <Box className={Styles.hexagon} textAlign="center" m="auto" p={5}>
+          <Heading>The Nearest Future</Heading>
 
-      <Center p={10} fontFamily="font.body" color="white">
-        <Text fontSize="2xl">
-          Rosbourne is a collection of 3k genesis avatars consist of 3 different
-          races, they are human, cyborg, and inu living in the dystopian
-          metropolis of Oakalis City.
-        </Text>
-        <Text fontSize="2xl" borderLeft="1px" borderColor="gray.200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          optio itaque magni nesciunt cupiditate aperiam recusandae rem
-          praesentium incidunt voluptas!
-        </Text>
+          <Text fontSize="1xl">
+            Rosbourne is a collection of 3k genesis avatars consist of 3
+            different races, they are human, cyborg, and inu living in the
+            dystopian metropolis of Oakalis City.
+          </Text>
+        </Box>
+        <Box className={Styles.hexagon} textAlign="center" m="auto" p={5}>
+          <Heading>The Nearest Future</Heading>
+
+          <Text fontSize="1xl">
+            Rosbourne is a collection of 3k genesis avatars consist of 3
+            different races, they are human, cyborg, and inu living in the
+            dystopian metropolis of Oakalis City.
+          </Text>
+        </Box>
+        <Box className={Styles.hexagon} textAlign="center" m="auto" p={5}>
+          <Heading>The Nearest Future</Heading>
+
+          <Text fontSize="1xl">
+            Rosbourne is a collection of 3k genesis avatars consist of 3
+            different races, they are human, cyborg, and inu living in the
+            dystopian metropolis of Oakalis City.
+          </Text>
+        </Box>
       </Center>
-      <Center p={10} fontFamily="font.body" color="white">
-        <Text fontSize="2xl">
-          Rosbourne is a collection of 3k genesis avatars consist of 3 different
-          races, they are human, cyborg, and inu living in the dystopian
-          metropolis of Oakalis City.
-        </Text>
-        <Text fontSize="2xl" borderLeft="1px" borderColor="gray.200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          optio itaque magni nesciunt cupiditate aperiam recusandae rem
-          praesentium incidunt voluptas!
-        </Text>
+      <Center p={10} mt={10} fontFamily="font.body" color="white">
+        <Box className={Styles.hexagon} textAlign="center" m="auto" p={5}>
+          <Heading>The Nearest Future</Heading>
+
+          <Text fontSize="1xl">
+            Rosbourne is a collection of 3k genesis avatars consist of 3
+            different races, they are human, cyborg, and inu living in the
+            dystopian metropolis of Oakalis City.
+          </Text>
+        </Box>
+        <Box
+          className={Styles.hexagon}
+          textAlign="center"
+          m="auto"
+          alignItems="center"
+          p={5}
+        >
+          <Heading>The Nearest Future</Heading>
+          <Text fontSize="1xl">
+            Rosbourne is a collection of 3k genesis avatars consist of 3
+            different races, they are human, cyborg, and inu living in the
+            dystopian metropolis of Oakalis City.
+          </Text>
+        </Box>
       </Center>
     </Box>
   );
