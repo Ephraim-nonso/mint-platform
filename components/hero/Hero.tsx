@@ -15,6 +15,7 @@ const Hero: NextPage = () => {
       // bgImage="url('../..assets/bg.jpg')"
       // bgPosition="center"
       // bgRepeat="no-repeat"
+      position="relative"
     >
       <Navbar />
       <Image
@@ -25,27 +26,28 @@ const Hero: NextPage = () => {
         placeholder="blur"
       />
 
-      {/* 
       <Center
-        bg="teal"
         h="200px"
         color="white"
         borderRadius="radii.lg"
         mx="auto"
         my={20}
+        position="absolute"
+        top="40%"
+        left="35%"
       >
-        <Heading color="" fontSize="8xl" fontFamily="font.heading">
+        <Heading color="" fontSize="9xl" fontFamily="font.heading">
           Rosbourne
         </Heading>
       </Center>
-
+      {/* 
       <Box w="50%" height="700" mx="auto" textAlign="center" color="white">
         <Text fontSize="2xl">
           Rosbourne is a collection of 3k genesis avatars consist of 3 different
           races, they are human, cyborg, and inu living in the dystopian
           metropolis of Oakalis City.
         </Text>
-      </Box> */}
+      </Box>  */}
     </Box>
   );
 };

@@ -7,7 +7,13 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <VStack>
-      <Box bg="brand.900" w="100%" p={10} color="black" fontFamily="font.body">
+      <Box
+        bg="brand.900"
+        w="100%"
+        p={10}
+        color="black"
+        style={{ fontFamily: "Vanilla" }}
+      >
         <Flex>
           <Link href="/">
             <Text fontSize="3xl" color={"white"}>
@@ -17,7 +23,7 @@ const Navbar = () => {
           <Spacer />
           <Box>
             <Link href="/mint">
-              <Button bg="brand.300" size="lg">
+              <Button bg="brand.300" size="lg" color="white">
                 Mint
               </Button>
             </Link>

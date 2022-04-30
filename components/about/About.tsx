@@ -3,6 +3,7 @@ import React from "react";
 import { Box, Center, Heading, Text, Grid, GridItem } from "@chakra-ui/react";
 import brief from "../../assets/gae.png";
 import Image from "next/image";
+import Styles from "./About.module.css";
 
 const About: NextPage = () => {
   return (
@@ -21,27 +22,30 @@ const About: NextPage = () => {
             <Heading
               color="brand.300"
               fontSize="7xl"
+              letterSpacing="3px"
               fontFamily="font.heading"
               my={20}
             >
               Who Are Rosbourne?
             </Heading>
             {/* </Center> */}
-            <Text fontSize="2xl">
-              Rosbourne is a collection of 3k genesis avatars consist of 3
-              different races, they are human, cyborg, and inu living in the
-              dystopian metropolis of Oakalis City.
-            </Text>
-            <Text fontSize="2xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              optio itaque magni nesciunt cupiditate aperiam recusandae rem
-              praesentium incidunt voluptas!
-            </Text>
-            <Text fontSize="2xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              optio itaque magni nesciunt cupiditate aperiam recusandae rem
-              praesentium incidunt voluptas!
-            </Text>
+            <Box className={Styles.details}>
+              <Text fontSize="2xl">
+                Rosbourne is a collection of 3k genesis avatars consist of 3
+                different races, they are human, cyborg, and inu living in the
+                dystopian metropolis of Oakalis City.
+              </Text>
+              <Text fontSize="2xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus optio itaque magni nesciunt cupiditate aperiam
+                recusandae rem praesentium incidunt voluptas!
+              </Text>
+              <Text fontSize="2xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus optio itaque magni nesciunt cupiditate aperiam
+                recusandae rem praesentium incidunt voluptas!
+              </Text>
+            </Box>
           </GridItem>
         </Grid>
       </Center>

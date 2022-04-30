@@ -7,13 +7,18 @@ const Roadmap: NextPage = () => {
   return (
     <Box w="100%" height="1000" bg="brand.900" p={5}>
       <Center h="100px" color="white" borderRadius="radii.lg" my={20}>
-        <Heading fontSize="7xl" fontFamily="font.heading" color="brand.300">
+        <Heading
+          fontSize="7xl"
+          fontFamily="font.heading"
+          color="brand.300"
+          letterSpacing="3px"
+        >
           Our Roadmap
         </Heading>
       </Center>
 
-      <Center p={10} fontFamily="font.body" color="white">
-        <Box className={Styles.hexagon} textAlign="center" m="auto" p={5}>
+      <Center p={10} color="white">
+        <Box className={Styles.hexagon} textAlign="center" m={25} p={5}>
           <Heading>The Nearest Future</Heading>
 
           <Text fontSize="1xl">
@@ -22,7 +27,7 @@ const Roadmap: NextPage = () => {
             dystopian metropolis of Oakalis City.
           </Text>
         </Box>
-        <Box className={Styles.hexagon} textAlign="center" m="auto" p={5}>
+        <Box className={Styles.hexagon} textAlign="center" m={25} p={5}>
           <Heading>The Nearest Future</Heading>
 
           <Text fontSize="1xl">
@@ -31,7 +36,7 @@ const Roadmap: NextPage = () => {
             dystopian metropolis of Oakalis City.
           </Text>
         </Box>
-        <Box className={Styles.hexagon} textAlign="center" m="auto" p={5}>
+        <Box className={Styles.hexagon} textAlign="center" m={25} p={5}>
           <Heading>The Nearest Future</Heading>
 
           <Text fontSize="1xl">
@@ -42,7 +47,7 @@ const Roadmap: NextPage = () => {
         </Box>
       </Center>
       <Center p={10} mt={10} fontFamily="font.body" color="white">
-        <Box className={Styles.hexagon} textAlign="center" m="auto" p={5}>
+        <Box className={Styles.hexagon} textAlign="center" m={25} p={5}>
           <Heading>The Nearest Future</Heading>
 
           <Text fontSize="1xl">
@@ -54,7 +59,7 @@ const Roadmap: NextPage = () => {
         <Box
           className={Styles.hexagon}
           textAlign="center"
-          m="auto"
+          m={25}
           alignItems="center"
           p={5}
         >

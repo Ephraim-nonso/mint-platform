@@ -18,10 +18,11 @@ import About from "../components/about/About";
 import Roadmap from "../components/roadmap/Roadmap";
 import Team from "../components/team/Team";
 import FaqComp from "../components/faq/Faq";
+import Collect from "../components/collect/Collect";
+import Join from "../components/join/Join";
 
 const Home: NextPage = () => {
   return (
-    // <div >
     <Box className={styles.container}>
       <Head>
         <title>Rosbourne</title>
@@ -31,10 +32,11 @@ const Home: NextPage = () => {
       {/* <Navbar /> */}
       <Hero />
 
+      <Collect />
       <About />
-
-      <Roadmap />
       <Team />
+      <Roadmap />
+      <Join />
       <FaqComp />
     </Box>
   );

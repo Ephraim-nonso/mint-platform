@@ -4,6 +4,7 @@ import { AiOutlineCaretDown } from "react-icons/ai";
 import Image from "next/image";
 import ShowFaq from "../../assets/29.png";
 import ShowFaq2 from "../../assets/66.png";
+import Styles from "./Faq.module.css";
 
 const data = {
   title: "FAQ (How it works)",
@@ -36,11 +37,7 @@ const data = {
 
 const FaqComp = () => {
   return (
-    // <div>
-    //   <Faq styles={styles} config={config} />
-    // </div>
-
-    <Box w="100%" height="900" bg="brand.900" p={10}>
+    <Box w="100%" height="1500" bg="brand.900" p={20}>
       <Flex align="center" justify="space-around">
         <Box width="50%">
           <Center
@@ -50,7 +47,12 @@ const FaqComp = () => {
             borderRadius="radii.lg"
             my={20}
           >
-            <Heading fontSize="6xl" fontFamily="font.heading" color="brand.300">
+            <Heading
+              fontSize="6xl"
+              fontFamily="font.heading"
+              color="brand.300"
+              letterSpacing="3px"
+            >
               {data.title}
             </Heading>
           </Center>
@@ -65,13 +67,14 @@ const FaqComp = () => {
                   borderRadius="radii.lg"
                   my={5}
                   cursor="pointer"
+                  opacity="0.5"
                 >
                   <Flex
                     justifyItems="space-between"
                     alignItems="center"
                     px={20}
                   >
-                    <Heading p="4">{item.title}</Heading>
+                    <Heading p="2">{item.title}</Heading>
                     <Spacer />
                     <Text p="4">
                       <AiOutlineCaretDown size={40} />
@@ -79,13 +82,17 @@ const FaqComp = () => {
                   </Flex>
                 </Box>
 
-                <Text display="none">{item.content}</Text>
+                <Box className={Styles.text}>
+                  <Text display="none" color="white" p="10">
+                    {item.content}
+                  </Text>
+                </Box>
               </Box>
             );
           })}
         </Box>
 
-        <Box m={10}>
+        <Box mt="100">
           <Image src={ShowFaq} alt="Faq-image" width="300" height="300" />
           <Image src={ShowFaq2} alt="Faq-image" width="300" height="300" />
         </Box>

@@ -7,6 +7,7 @@ import First from "../../assets/6.png";
 import Second from "../../assets/4.png";
 import Third from "../../assets/23.png";
 import Four from "../../assets/80.png";
+import Styles from "../about/About.module.css";
 
 function Card() {
   const properties = [
@@ -70,22 +71,20 @@ function Card() {
       />
 
       <Box p="6">
-        <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
+        <Box
+          mt="1"
+          fontWeight="semibold"
+          as="h4"
+          lineHeight="tight"
+          color="white"
+          className={Styles.details}
+        >
           {property.title}
         </Box>
 
         <Box>
           <Text color="white">{property.formattedPrice}</Text>
-          {/* <Box as="span" color="gray.600" fontSize="sm">
-            / wk
-          </Box> */}
         </Box>
-
-        {/* <Box display="flex" mt="2" alignItems="center">
-          <Box as="span" ml="2" color="gray.600" fontSize="sm">
-            {property.reviewCount} reviews
-          </Box>
-        </Box> */}
       </Box>
     </Box>
   ));

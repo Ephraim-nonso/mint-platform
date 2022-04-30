@@ -3,6 +3,8 @@
   height: 250px;
   background: #0b1d6c;
   position: relative;
+  font-family: Vanilla, sans-serif;
+  letter-spacing: 2;
 }
 .hexagon::before {
   content: "";
