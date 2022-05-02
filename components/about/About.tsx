@@ -7,8 +7,8 @@ import Styles from "./About.module.css";
 
 const About: NextPage = () => {
   return (
-    <Box w="100%" height="900" bg="brand.900" p={20}>
-      <Center p={50} fontFamily="font.body" color="white">
+    <Box w="100%" height="900" bg="brand.900" p={40}>
+      <Center fontFamily="font.body" color="white">
         <Grid
           templateColumns="repeat(2, 1fr)"
           gap={6}

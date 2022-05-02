@@ -4,7 +4,7 @@ import { FaDiscord, FaTwitter } from "react-icons/fa";
 
 const Join = () => {
   return (
-    <Box w="100%" height="900" bg="brand.900" p={20}>
+    <Box w="100%" height="900" bg="brand.900" p={40}>
       <Center h="100px" color="white" borderRadius="radii.lg" my={20}>
         <Heading
           fontSize="7xl"

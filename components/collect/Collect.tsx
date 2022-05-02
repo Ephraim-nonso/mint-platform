@@ -25,7 +25,7 @@ const collections = [
 const Collect = () => {
   return (
     <div>
-      <Box w="100%" height="1000" bg="brand.900" p={10}>
+      <Box w="100%" height="1000" bg="brand.900" p={20}>
         <Center h="100px" color="white" borderRadius="radii.lg" mt={20}>
           <Heading
             fontSize="7xl"
