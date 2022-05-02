@@ -30,7 +30,7 @@ const data = {
     },
     {
       title: "What is the package version",
-      content: <p>current version is 1.2.1</p>,
+      content: "current version is 1.2.1",
     },
   ],
 };

@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import Layout from "../components/Layout/Layout";
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
-// 1. Import the extendTheme function
 import { extendTheme } from "@chakra-ui/react";
 import "@fontsource/rubik-wet-paint";
 import "@fontsource/bangers";

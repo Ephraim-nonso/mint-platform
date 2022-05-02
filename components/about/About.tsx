@@ -8,7 +8,7 @@ import Styles from "./About.module.css";
 const About: NextPage = () => {
   return (
     <Box w="100%" height="900" bg="brand.900" p={20}>
-      <Center px={10} fontFamily="font.body" color="white">
+      <Center p={50} fontFamily="font.body" color="white">
         <Grid
           templateColumns="repeat(2, 1fr)"
           gap={6}
@@ -24,23 +24,23 @@ const About: NextPage = () => {
               fontSize="7xl"
               letterSpacing="3px"
               fontFamily="font.heading"
-              my={20}
+              my={10}
             >
               Who Are Rosbourne?
             </Heading>
             {/* </Center> */}
             <Box className={Styles.details}>
-              <Text fontSize="2xl">
+              <Text fontSize="2xl" pb={5}>
                 Rosbourne is a collection of 3k genesis avatars consist of 3
                 different races, they are human, cyborg, and inu living in the
                 dystopian metropolis of Oakalis City.
               </Text>
-              <Text fontSize="2xl">
+              <Text fontSize="2xl" pb={5}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus optio itaque magni nesciunt cupiditate aperiam
                 recusandae rem praesentium incidunt voluptas!
               </Text>
-              <Text fontSize="2xl">
+              <Text fontSize="2xl" pb={5}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus optio itaque magni nesciunt cupiditate aperiam
                 recusandae rem praesentium incidunt voluptas!

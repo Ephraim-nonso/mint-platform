@@ -1,6 +1,11 @@
+.font {
+  font-family: Vanilla, sans-serif;
+}
+
 .mint {
   text-decoration: none;
   position: relative;
+  font-family: Vanilla, sans-serif;
 }
 
 .mint:after {

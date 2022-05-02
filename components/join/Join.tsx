@@ -1,10 +1,10 @@
 import React from "react";
-import { Box, Center, Heading, Text } from "@chakra-ui/react";
-import { FaDiscord } from "react-icons/fa";
+import { Box, Center, Heading, Text, Flex } from "@chakra-ui/react";
+import { FaDiscord, FaTwitter } from "react-icons/fa";
 
 const Join = () => {
   return (
-    <Box w="100%" height="900" bg="brand.900" p={10}>
+    <Box w="100%" height="900" bg="brand.900" p={20}>
       <Center h="100px" color="white" borderRadius="radii.lg" my={20}>
         <Heading
           fontSize="7xl"
@@ -15,13 +15,30 @@ const Join = () => {
           Join Community
         </Heading>
       </Center>
-      <Box border="2px" borderColor="white" width="100%" height="500">
-        <Center p="auto">
-          <Text>
-            <FaDiscord size={32} color="white" />
-          </Text>
-        </Center>
-      </Box>
+      <Flex width="100%" height="500">
+        <Box bg="white" width="50%" height="100%">
+          <Text></Text>
+        </Box>
+        <Box
+          width="50%"
+          height="100%"
+          color="white"
+          fontFamily="font.body"
+          p={20}
+        >
+          <Center p="auto">
+            <Box display="block">
+              <Text fontSize="3xl">Join the Rosbourne Community</Text>
+            </Box>
+            <Box width="100%">
+              <Flex width="200px" justify="space-between">
+                <FaDiscord size={36} />
+                <FaTwitter size={36} />
+              </Flex>
+            </Box>
+          </Center>
+        </Box>
+      </Flex>
     </Box>
   );
 };

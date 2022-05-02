@@ -1,15 +1,14 @@
-import { NextPage } from "next";
 import React from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import { Badge } from "@chakra-ui/react";
+
 import First from "../../assets/6.png";
 import Second from "../../assets/4.png";
 import Third from "../../assets/23.png";
 import Four from "../../assets/80.png";
 import Styles from "../about/About.module.css";
 
-function Card() {
+const Card = () => {
   const properties = [
     {
       imageUrl: First,
@@ -46,14 +45,13 @@ function Card() {
       imageAlt: "Rear view of modern home with pool",
       beds: 3,
       baths: 2,
-      title: "In the heart of historic",
+      title: "Heart of historic",
       formattedPrice: "$1,900.00",
       reviewCount: 34,
       rating: 4,
     },
   ];
-
-  return properties.map((property) => (
+  const cardProp = properties.map((property) => (
     <Box
       maxW="sm"
       borderWidth="1px"
@@ -88,6 +86,7 @@ function Card() {
       </Box>
     </Box>
   ));
-}
+  return <Flex>{cardProp}</Flex>;
+};
 
 export default Card;

@@ -19,7 +19,7 @@ const Roadmap: NextPage = () => {
 
       <Center p={10} color="white">
         <Box className={Styles.hexagon} textAlign="center" m={25} p={5}>
-          <Heading>The Nearest Future</Heading>
+          <Heading pb={7}>The Nearest Future</Heading>
 
           <Text fontSize="1xl">
             Rosbourne is a collection of 3k genesis avatars consist of 3
@@ -28,7 +28,7 @@ const Roadmap: NextPage = () => {
           </Text>
         </Box>
         <Box className={Styles.hexagon} textAlign="center" m={25} p={5}>
-          <Heading>The Nearest Future</Heading>
+          <Heading pb={7}>The Nearest Future</Heading>
 
           <Text fontSize="1xl">
             Rosbourne is a collection of 3k genesis avatars consist of 3
@@ -37,7 +37,7 @@ const Roadmap: NextPage = () => {
           </Text>
         </Box>
         <Box className={Styles.hexagon} textAlign="center" m={25} p={5}>
-          <Heading>The Nearest Future</Heading>
+          <Heading pb={7}>The Nearest Future</Heading>
 
           <Text fontSize="1xl">
             Rosbourne is a collection of 3k genesis avatars consist of 3
@@ -48,7 +48,7 @@ const Roadmap: NextPage = () => {
       </Center>
       <Center p={10} mt={10} fontFamily="font.body" color="white">
         <Box className={Styles.hexagon} textAlign="center" m={25} p={5}>
-          <Heading>The Nearest Future</Heading>
+          <Heading pb={7}>The Nearest Future</Heading>
 
           <Text fontSize="1xl">
             Rosbourne is a collection of 3k genesis avatars consist of 3
@@ -61,9 +61,9 @@ const Roadmap: NextPage = () => {
           textAlign="center"
           m={25}
           alignItems="center"
-          p={5}
+          p={3}
         >
-          <Heading>The Nearest Future</Heading>
+          <Heading pb={3}>The Nearest Future</Heading>
           <Text fontSize="1xl">
             Rosbourne is a collection of 3k genesis avatars consist of 3
             different races, they are human, cyborg, and inu living in the
