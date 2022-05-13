@@ -7,30 +7,25 @@ import ShowFaq2 from "../../assets/66.png";
 import Styles from "./Faq.module.css";
 
 const data = {
-  title: "FAQ (How it works)",
+  title: "FAQ",
   rows: [
     {
-      title: "Lorem ipsum dolor sit amet,",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
-            ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
-            In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
-            Fusce sed commodo purus, at tempus turpis.`,
+      title: "What is an NFT?",
+      content: `NFT stands for non-fungible token, NFTs are unique cryptographic tokens that exist on a blockchain and cannot be replicated. An NFT is a non-interchangeable unit of data stored in a blockchain with proof of ownership.`,
     },
     {
-      title: "Nunc maximus, magna at ultricies elementum",
+      title: "What is Rosbourne?",
       content:
-        "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+        "ROSBOURNE is a genesis collection of 3 different races: human, cyborg, and inu living in the dystopian metropolis of Oakalis City. This token is a collectible that lives on the Ethereum blockchain.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
-      content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-          Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-          Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-          Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+      title: "What is the supply?",
+      content: `There are 3k genesis collections of Rosbourne NFTs with an initial mint price of .03 ETH each.
+      3 max txn per wallet.`,
     },
     {
-      title: "What is the package version",
-      content: "current version is 1.2.1",
+      title: "Wen reveal?",
+      content: "24 hours after sold out.",
     },
   ],
 };

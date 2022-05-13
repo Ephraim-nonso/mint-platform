@@ -44,10 +44,10 @@ const mint: NextPage = () => {
         </Button>
       </Center>
 
-      <Center color="white" borderRadius="radii.lg" my={20}>
+      <Center color="white" borderRadius="radii.lg">
         <Text fontSize="2xl" color="white"></Text>
       </Center>
-      <Center color="white" borderRadius="radii.lg" my={20}>
+      <Center color="white" borderRadius="radii.lg">
         <Link href="/">
           <Text
             fontSize="2xl"

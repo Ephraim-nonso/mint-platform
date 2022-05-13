@@ -80,6 +80,7 @@ const Card = () => {
       key={property.title}
       fontSize="2xl"
       fontFamily="font.body"
+      m="3"
     >
       <Image
         src={property.imageUrl}

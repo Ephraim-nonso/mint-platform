@@ -34,10 +34,11 @@ const Home: NextPage = () => {
 
       {/* <Collect /> */}
       {/* <About /> */}
-      <Team />
       {/* <Roadmap />
       <Join /> */}
+      <Team />
       <FaqComp />
+      <Card />
     </Box>
   );
 };
