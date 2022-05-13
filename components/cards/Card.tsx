@@ -50,6 +50,26 @@ const Card = () => {
       reviewCount: 34,
       rating: 4,
     },
+    {
+      imageUrl: Four,
+      imageAlt: "Rear view of modern home with pool",
+      beds: 3,
+      baths: 2,
+      title: "Heart of historic",
+      formattedPrice: "$1,900.00",
+      reviewCount: 34,
+      rating: 4,
+    },
+    {
+      imageUrl: Four,
+      imageAlt: "Rear view of modern home with pool",
+      beds: 3,
+      baths: 2,
+      title: "Heart of historic",
+      formattedPrice: "$1,900.00",
+      reviewCount: 34,
+      rating: 4,
+    },
   ];
   const cardProp = properties.map((property) => (
     <Box
@@ -68,7 +88,7 @@ const Card = () => {
         height={500}
       />
 
-      <Box p="6">
+      {/* <Box p="6">
         <Box
           mt="1"
           fontWeight="semibold"
@@ -83,7 +103,7 @@ const Card = () => {
         <Box>
           <Text color="white">{property.formattedPrice}</Text>
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   ));
   return <Flex>{cardProp}</Flex>;

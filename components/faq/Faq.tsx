@@ -37,7 +37,7 @@ const data = {
 
 const FaqComp = () => {
   return (
-    <Box w="100%" height="1500" bg="brand.900" p={20}>
+    <Box w="100%" height="900" bg="brand.900" p={20}>
       <Flex align="center" justify="space-around">
         <Box width="50%">
           <Center
@@ -92,10 +92,10 @@ const FaqComp = () => {
           })}
         </Box>
 
-        <Box mt="100">
+        {/* <Box mt="100">
           <Image src={ShowFaq} alt="Faq-image" width="300" height="300" />
           <Image src={ShowFaq2} alt="Faq-image" width="300" height="300" />
-        </Box>
+        </Box> */}
       </Flex>
     </Box>
   );

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 import Logo from "../../assets/Rosbourne_Logo.png";
+import opensea from "../../assets/opensea.png";
 
 const Navbar = () => {
   return (
@@ -13,12 +14,12 @@ const Navbar = () => {
       <Box
         bg="brand.900"
         w="100%"
-        p={10}
+        p={7}
         color="black"
-        style={{ fontFamily: "Vanilla" }}
+        style={{ fontFamily: "arcade" }}
       >
         <Flex align="center" justify="space-around">
-          <Box width="120px">
+          <Box width="150px">
             <Flex align="center" justify="space-around">
               <Text cursor="pointer">
                 <FaTwitter size="40" color="white" />
@@ -26,6 +27,9 @@ const Navbar = () => {
               <Text cursor="pointer">
                 <FaDiscord size="40" color="white" />
               </Text>
+              <Box cursor="pointer">
+                <Image src={opensea} alt="opensea" width="40" height="40" />
+              </Box>
             </Flex>
           </Box>
           <Spacer />
@@ -38,7 +42,13 @@ const Navbar = () => {
           <Box>
             <Flex align="center" justify="space-around">
               <Link href="/mint">
-                <Button bg="brand.300" size="lg" color="white">
+                <Button
+                  bg="brand.300"
+                  size="lg"
+                  color="black"
+                  textTransform="uppercase"
+                  letterSpacing="2px"
+                >
                   Mint
                 </Button>
               </Link>

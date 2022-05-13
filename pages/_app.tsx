@@ -9,7 +9,7 @@ import "@fontsource/merriweather";
 
 const colors = {
   brand: {
-    900: "#000A3C",
+    900: "#000000",
     800: "#1B2C79",
     700: "#0b1d6c",
     500: "#0C2475",

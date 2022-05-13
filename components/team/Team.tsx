@@ -2,11 +2,12 @@ import { NextPage } from "next";
 import React from "react";
 import { Box, Center, Heading } from "@chakra-ui/react";
 import Card from "../cards/Card";
+import Styles from "./Team.module.css";
 
 const Team: NextPage = () => {
   return (
-    <Box w="100%" height="900" bg="brand.900" p={10}>
-      <Center h="100px" color="white" borderRadius="radii.lg" my={20}>
+    <Box w="100%" height="600" bg="brand.900" p={10}>
+      {/* <Center h="100px" color="white" borderRadius="radii.lg" my={20}>
         <Heading
           fontSize="7xl"
           fontFamily="font.heading"
@@ -15,11 +16,12 @@ const Team: NextPage = () => {
         >
           Our Collections
         </Heading>
-      </Center>
+      </Center> */}
 
-      <Center>
+      <Box className={Styles.display} mt="35px">
         <Card />
-      </Center>
+        <Card />
+      </Box>
     </Box>
   );
 };
