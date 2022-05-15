@@ -29,7 +29,6 @@ const Home: NextPage = () => {
         <meta name="description" content="Rosbourne NFT" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Navbar /> */}
       <Hero />
 
       <Collect />

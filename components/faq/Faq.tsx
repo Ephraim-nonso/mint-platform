@@ -31,12 +31,11 @@ const data = {
 };
 
 const styles = {
-  // bgColor: 'white',
-  rowTitleColor: "blue",
-  // rowContentColor: 'grey',
-  arrowColor: "black",
+  bgColor: "rgb(236,8,135)",
+  rowTitleColor: "white",
+  rowContentColor: "rgb(254,242,87)",
+  arrowColor: "white",
   transitionDuration: "0.3s",
-  rowPadding: "20",
 };
 
 const config = {
@@ -47,7 +46,7 @@ const config = {
 
 const FaqComp = () => {
   return (
-    <Box w="100%" height="600" bg="brand.900" p={10}>
+    <Box w="100%" height="500" bg="brand.900" p={10}>
       <Center h="" color="white" borderRadius="radii.lg" my={5}>
         <Heading
           fontSize="6xl"
