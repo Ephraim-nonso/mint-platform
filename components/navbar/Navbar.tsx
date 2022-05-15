@@ -14,7 +14,8 @@ const Navbar = () => {
       <Box
         bg="brand.900"
         w="100%"
-        p={7}
+        px={16}
+        py={7}
         color="black"
         style={{ fontFamily: "arcade" }}
       >
@@ -22,20 +23,20 @@ const Navbar = () => {
           <Box width="150px">
             <Flex align="center" justify="space-around">
               <Text cursor="pointer">
-                <FaTwitter size="40" color="white" />
+                <FaTwitter size="30" color="white" />
               </Text>
               <Text cursor="pointer">
-                <FaDiscord size="40" color="white" />
+                <FaDiscord size="30" color="white" />
               </Text>
               <Box cursor="pointer">
-                <Image src={opensea} alt="opensea" width="40" height="40" />
+                <Image src={opensea} alt="opensea" width="30" height="30" />
               </Box>
             </Flex>
           </Box>
           <Spacer />
           <Box cursor="pointer">
             <Link href="/">
-              <Image src={Logo} alt="Rosbourne_Logo" width="270" height="30" />
+              <Image src={Logo} alt="Rosbourne_Logo" width="200" height="20" />
             </Link>
           </Box>
           <Spacer />
@@ -44,7 +45,7 @@ const Navbar = () => {
               <Link href="/mint">
                 <Button
                   bg="brand.300"
-                  size="lg"
+                  size="sm"
                   color="black"
                   textTransform="uppercase"
                   letterSpacing="2px"

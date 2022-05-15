@@ -32,13 +32,12 @@ const Home: NextPage = () => {
       {/* <Navbar /> */}
       <Hero />
 
-      {/* <Collect /> */}
-      {/* <About /> */}
-      {/* <Roadmap />
+      <Collect />
+      {/* <About /> 
       <Join /> */}
       <Team />
+      <Roadmap />
       <FaqComp />
-      <Card />
     </Box>
   );
 };

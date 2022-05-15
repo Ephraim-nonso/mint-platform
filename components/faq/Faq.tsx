@@ -5,9 +5,9 @@ import Image from "next/image";
 import ShowFaq from "../../assets/29.png";
 import ShowFaq2 from "../../assets/66.png";
 import Styles from "./Faq.module.css";
+import Faq from "react-faq-component";
 
 const data = {
-  title: "FAQ",
   rows: [
     {
       title: "What is an NFT?",
@@ -30,68 +30,38 @@ const data = {
   ],
 };
 
+const styles = {
+  // bgColor: 'white',
+  rowTitleColor: "blue",
+  // rowContentColor: 'grey',
+  arrowColor: "black",
+  transitionDuration: "0.3s",
+  rowPadding: "20",
+};
+
+const config = {
+  animate: true,
+  // arrowIcon: "V",
+  tabFocus: true,
+};
+
 const FaqComp = () => {
   return (
-    <Box w="100%" height="900" bg="brand.900" p={20}>
-      <Flex align="center" justify="space-around">
-        <Box width="50%">
-          <Center
-            bg="brand.500"
-            h="100px"
-            color="white"
-            borderRadius="radii.lg"
-            my={20}
-          >
-            <Heading
-              fontSize="6xl"
-              fontFamily="font.heading"
-              color="brand.300"
-              letterSpacing="3px"
-            >
-              {data.title}
-            </Heading>
-          </Center>
+    <Box w="100%" height="600" bg="brand.900" p={10}>
+      <Center h="" color="white" borderRadius="radii.lg" my={5}>
+        <Heading
+          fontSize="6xl"
+          fontFamily="font.heading"
+          color="brand.300"
+          letterSpacing="3px"
+        >
+          FAQ
+        </Heading>
+      </Center>
 
-          {data.rows.map((item) => {
-            return (
-              <Box key={item.title}>
-                <Box
-                  bg="brand.500"
-                  h="100px"
-                  color="white"
-                  borderRadius="radii.lg"
-                  my={5}
-                  cursor="pointer"
-                  opacity="0.5"
-                >
-                  <Flex
-                    justifyItems="space-between"
-                    alignItems="center"
-                    px={20}
-                  >
-                    <Heading p="2">{item.title}</Heading>
-                    <Spacer />
-                    <Text p="4">
-                      <AiOutlineCaretDown size={40} />
-                    </Text>
-                  </Flex>
-                </Box>
-
-                <Box className={Styles.text}>
-                  <Text display="none" color="white" p="10">
-                    {item.content}
-                  </Text>
-                </Box>
-              </Box>
-            );
-          })}
-        </Box>
-
-        {/* <Box mt="100">
-          <Image src={ShowFaq} alt="Faq-image" width="300" height="300" />
-          <Image src={ShowFaq2} alt="Faq-image" width="300" height="300" />
-        </Box> */}
-      </Flex>
+      <Box>
+        <Faq data={data} styles={styles} config={config} />
+      </Box>
     </Box>
   );
 };
