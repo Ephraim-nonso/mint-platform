@@ -46,7 +46,7 @@ const config = {
 
 const FaqComp = () => {
   return (
-    <Box w="100%" height="500" bg="brand.900" p={10}>
+    <Box w="100%" height="400" bg="brand.900" p={10}>
       <Center h="" color="white" borderRadius="radii.lg" my={5}>
         <Heading
           fontSize="6xl"
