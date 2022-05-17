@@ -21,20 +21,14 @@ const mint: NextPage = () => {
   const notify = () => toast("Working well!");
   return (
     <Box w="100%" height="100vh" bg="brand.900" p={10} className={Styles.font}>
-      <Center
-        bg="brand.700"
-        h="100px"
-        color="white"
-        borderRadius="radii.lg"
-        my={20}
-      >
-        <Heading fontSize="8xl" fontFamily="font.heading">
+      <Center bg="brand.300" h="100px" color="white" my={20}>
+        <Text fontSize="6xl" textTransform="uppercase">
           Mint
-        </Heading>
+        </Text>
       </Center>
       <Center color="white" borderRadius="radii.lg" my={20}>
         <Text fontSize="6xl" color="white" className={Styles.font}>
-          0/5555
+          0/3000
         </Text>
       </Center>
 

@@ -4,7 +4,7 @@ import { AiOutlineCaretDown } from "react-icons/ai";
 import Image from "next/image";
 import ShowFaq from "../../assets/29.png";
 import ShowFaq2 from "../../assets/66.png";
-import Styles from "./Faq.module.css";
+import style from "./Faq.module.css";
 import Faq from "react-faq-component";
 
 const data = {
@@ -46,16 +46,17 @@ const config = {
 
 const FaqComp = () => {
   return (
-    <Box w="100%" height="400" bg="brand.900" p={10}>
+    <Box w="100%" height="500" bg="brand.900" p={20} className={style.heading}>
       <Center h="" color="white" borderRadius="radii.lg" my={5}>
-        <Heading
-          fontSize="6xl"
-          fontFamily="font.heading"
+        <Text
+          fontSize="5xl"
           color="brand.300"
           letterSpacing="3px"
+          className={style.heading}
+          textTransform="uppercase"
         >
           FAQ
-        </Heading>
+        </Text>
       </Center>
 
       <Box>

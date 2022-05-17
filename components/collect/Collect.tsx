@@ -1,15 +1,27 @@
 import React from "react";
-import { Box, Heading, Center, Text } from "@chakra-ui/react";
+import { Box, Heading, Center, Text, StylesProvider } from "@chakra-ui/react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Image from "next/image";
 import displayImg1 from "../../assets/ABOUT.jpg";
 import Link from "next/link";
+import styles from "./Collect.module.css";
 
 const Collect = () => {
   return (
     <div>
-      <Box bg="brand.900">
-        <Image src={displayImg1} alt="about" width="1500" height="180" />
+      <Box bg="brand.900" height="150">
+        <Text
+          fontSize="lg"
+          px="20"
+          width="500"
+          color="brand.300"
+          minWidth={500}
+          className={styles.text}
+          textAlign="center"
+        >
+          Rosbourne is a genesis collection of 3 superior races living in the
+          dystopian metropolis of Oakalis City set in a post-apocalyptic world.
+        </Text>
       </Box>
     </div>
   );

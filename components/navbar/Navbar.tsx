@@ -7,18 +7,12 @@ import { FaDiscord, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 import Logo from "../../assets/Rosbourne_Logo.png";
 import opensea from "../../assets/opensea.png";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
     <VStack>
-      <Box
-        bg="brand.900"
-        w="100%"
-        px={16}
-        py={7}
-        color="black"
-        style={{ fontFamily: "arcade" }}
-      >
+      <Box bg="brand.900" w="100%" px={16} py={7} color="black">
         <Flex align="center" justify="space-around">
           <Box width="150px">
             <Flex align="center" justify="space-around">
@@ -49,6 +43,7 @@ const Navbar = () => {
                   color="black"
                   textTransform="uppercase"
                   letterSpacing="2px"
+                  className={styles.btn}
                 >
                   Mint
                 </Button>

@@ -9,43 +9,80 @@ import {
   GridItem,
   Flex,
 } from "@chakra-ui/react";
-import avatar from "../../assets/6.png";
+import avatar1 from "../../assets/team1.jpg";
+import avatar2 from "../../assets/team.jpeg";
+import avatar3 from "../../assets/team1.jpg";
 import Image from "next/image";
 import Styles from "./About.module.css";
 
 const About: NextPage = () => {
   return (
-    <Box w="100%" height="600" bg="brand.900" px={60} py={20}>
+    <Box
+      w="100%"
+      height="550"
+      bg="brand.900"
+      px={60}
+      py={10}
+      className={Styles.text}
+    >
       <Center py={10}>
-        <Heading
-          fontSize="6xl"
-          fontFamily="font.heading"
+        <Text
+          fontSize="5xl"
           color="brand.300"
           letterSpacing="3px"
+          textTransform="uppercase"
         >
           Our Team
-        </Heading>
+        </Text>
       </Center>
-      <Flex justify="space-between">
-        <Box>
-          <Image src={avatar} width="200" height="200" className={Styles.img} />
-          <Center color="brand.300">
-            <Text>Rosbourne the second</Text>
-          </Center>
-        </Box>
-        <Box>
-          <Image src={avatar} width="200" height="200" className={Styles.img} />
-          <Center color="brand.300">
-            <Text>Rosbourne the second</Text>
-          </Center>
-        </Box>
-        <Box>
-          <Image src={avatar} width="200" height="200" className={Styles.img} />
-          <Center color="brand.300">
-            <Text>Rosbourne the second</Text>
-          </Center>
-        </Box>
-      </Flex>
+      <Center>
+        <Flex justify="space-evenly" minWidth="800" width="1000">
+          <Box>
+            <Image
+              src={avatar1}
+              width="200"
+              height="200"
+              className={Styles.img}
+            />
+            <Center color="brand.300">
+              <Text>Rosbourne the second</Text>
+            </Center>
+          </Box>
+          <Box>
+            <Image
+              src={avatar2}
+              width="200"
+              height="200"
+              className={Styles.img}
+            />
+            <Center color="brand.300">
+              <Text>Rosbourne the second</Text>
+            </Center>
+          </Box>
+          <Box>
+            <Image
+              src={avatar3}
+              width="200"
+              height="200"
+              className={Styles.img}
+            />
+            <Center color="brand.300">
+              <Text>Rosbourne the second</Text>
+            </Center>
+          </Box>
+          <Box>
+            <Image
+              src={avatar3}
+              width="200"
+              height="200"
+              className={Styles.img}
+            />
+            <Center color="brand.300">
+              <Text>Rosbourne the second</Text>
+            </Center>
+          </Box>
+        </Flex>
+      </Center>
     </Box>
   );
 };
