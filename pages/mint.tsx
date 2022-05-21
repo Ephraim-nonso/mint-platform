@@ -5,17 +5,17 @@ import Link from "next/link";
 import Styles from "../styles/Mint.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Connectors } from "web3-react";
+// import { Connectors } from "web3-react";
 
-const { InjectedConnector, NetworkOnlyConnector } = Connectors;
+// const { InjectedConnector, NetworkOnlyConnector } = Connectors;
 
-const MetaMask = new InjectedConnector({ supportedNetworks: [1, 4] });
+// const MetaMask = new InjectedConnector({ supportedNetworks: [1, 4] });
 
-const Infura = new NetworkOnlyConnector({
-  providerURL: "https://mainnet.infura.io/v3/...",
-});
+// const Infura = new NetworkOnlyConnector({
+//   providerURL: "https://mainnet.infura.io/v3/...",
+// });
 
-const connectors = { MetaMask, Infura };
+// const connectors = { MetaMask, Infura };
 
 const mint: NextPage = () => {
   const notify = () => toast("Working well!");
