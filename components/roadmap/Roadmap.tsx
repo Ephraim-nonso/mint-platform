@@ -15,7 +15,6 @@ const Roadmap: NextPage = () => {
       color="white"
       className={Styles.font}
     >
-      {/* <Image src={roadmap} alt="roadmap" height="900" width="1200" /> */}
       <Box>
         <Center fontSize="6xl" color="brand.300" my="15">
           <Text>Roadmap</Text>
@@ -27,7 +26,7 @@ const Roadmap: NextPage = () => {
           We believe in underpromise and overdeliver.
         </Text>
         <Text mb="10" fontSize="lg">
-          Once we 100% SOLD OUT, here's what we are going to do:
+          Once we 100% SOLD OUT, here is what we are going to do:
         </Text>
 
         <Flex color="brand.500" mb="10" fontSize="lg">
@@ -37,7 +36,7 @@ const Roadmap: NextPage = () => {
           <Text>
             Level up our NFT community alpha by purchasing exclusive ORIGINS
             Discord Bots that provide Rosbourne holders with advanced features
-            that deliver sophisticated knowledge and insight
+            that deliver sophisticated knowledge and insight.
           </Text>
         </Flex>
 

@@ -40,6 +40,7 @@ const About: NextPage = () => {
           <Box>
             <Image
               src={avatar1}
+              alt="Avatar one"
               width="200"
               height="200"
               className={Styles.img}
@@ -51,6 +52,7 @@ const About: NextPage = () => {
           <Box>
             <Image
               src={avatar2}
+              alt="Avatar two"
               width="200"
               height="200"
               className={Styles.img}
@@ -62,6 +64,7 @@ const About: NextPage = () => {
           <Box>
             <Image
               src={avatar3}
+              alt="Avatar three"
               width="200"
               height="200"
               className={Styles.img}
@@ -73,6 +76,7 @@ const About: NextPage = () => {
           <Box>
             <Image
               src={avatar3}
+              alt="Avatar four"
               width="200"
               height="200"
               className={Styles.img}
