@@ -16,11 +16,11 @@ const data = {
     {
       title: "What is Rosbourne?",
       content:
-        "ROSBOURNE is a genesis collection of 3 different races: human, cyborg, and inu living in the dystopian metropolis of Oakalis City. This token is a collectible that lives on the Ethereum blockchain.",
+        "Rosbourne is a genesis collection of 3 superior races living in the dystopian metropolis of Oakalis City set in a post-apocalyptic world. This token is a collectible that lives on the Ethereum blockchain.",
     },
     {
       title: "What is the supply?",
-      content: `There are 3k genesis collections of Rosbourne NFTs with an initial mint price of .03 ETH each.
+      content: `There are 3k genesis collections of Rosbourne NFTs with an initial mint price of 0.02 ETH each.
       3 max txn per wallet.`,
     },
     {
