@@ -3,5 +3,14 @@
 }
 .block {
   display: block;
+}
+
+.block__second {
   text-transform: uppercase;
+  display: block;
+}
+
+.block__second:last-child {
+  font-size: 2rem;
+  padding-top: 10px;
 }

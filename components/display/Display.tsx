@@ -17,10 +17,10 @@ const Display = () => {
         className={styles.text}
         textAlign="center"
       >
-        <span className={styles.block}>
+        <span className={styles.block__second}>
           Only a few are selected to join the rosbourne
         </span>
-        <span className={styles.block}>Are you the one?</span>
+        <span className={styles.block__second}>Are you the one?</span>
       </Text>
 
       <Flex bg="brand.900" flexDirection="column">
