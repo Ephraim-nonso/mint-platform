@@ -70,44 +70,58 @@ const Card = () => {
       reviewCount: 34,
       rating: 4,
     },
+    {
+      imageUrl: Four,
+      imageAlt: "Rear view of modern home with pool",
+      beds: 3,
+      baths: 2,
+      title: "Heart of historic",
+      formattedPrice: "$1,900.00",
+      reviewCount: 34,
+      rating: 4,
+    },
+    {
+      imageUrl: Four,
+      imageAlt: "Rear view of modern home with pool",
+      beds: 3,
+      baths: 2,
+      title: "Heart of historic",
+      formattedPrice: "$1,900.00",
+      reviewCount: 34,
+      rating: 4,
+    },
+    {
+      imageUrl: Four,
+      imageAlt: "Rear view of modern home with pool",
+      beds: 3,
+      baths: 2,
+      title: "Heart of historic",
+      formattedPrice: "$1,900.00",
+      reviewCount: 34,
+      rating: 4,
+    },
+    {
+      imageUrl: Four,
+      imageAlt: "Rear view of modern home with pool",
+      beds: 3,
+      baths: 2,
+      title: "Heart of historic",
+      formattedPrice: "$1,900.00",
+      reviewCount: 34,
+      rating: 4,
+    },
   ];
   const cardProp = properties.map((property) => (
-    <Box
-      maxW="sm"
-      borderWidth="1px"
-      borderRadius="lg"
-      overflow="hidden"
-      key={property.title}
-      fontSize="2xl"
-      fontFamily="font.body"
-      m="3"
-    >
+    <Box key={property.title} p={2}>
       <Image
         src={property.imageUrl}
         alt={property.imageAlt}
-        width={500}
-        height={500}
+        width={130}
+        height={130}
       />
-
-      {/* <Box p="6">
-        <Box
-          mt="1"
-          fontWeight="semibold"
-          as="h4"
-          lineHeight="tight"
-          color="white"
-          className={Styles.details}
-        >
-          {property.title}
-        </Box>
-
-        <Box>
-          <Text color="white">{property.formattedPrice}</Text>
-        </Box>
-      </Box> */}
     </Box>
   ));
-  return <Flex>{cardProp}</Flex>;
+  return <Flex justifyContent="space-around">{cardProp}</Flex>;
 };
 
 export default Card;

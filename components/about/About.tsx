@@ -11,7 +11,8 @@ import {
 } from "@chakra-ui/react";
 import avatar1 from "../../assets/team1.jpg";
 import avatar2 from "../../assets/team.jpeg";
-import avatar3 from "../../assets/team1.jpg";
+import avatar3 from "../../assets/par.jpg";
+import avatar4 from "../../assets/gh.jpg";
 import Image from "next/image";
 import Styles from "./About.module.css";
 
@@ -36,8 +37,8 @@ const About: NextPage = () => {
         </Text>
       </Center>
       <Center>
-        <Flex justify="space-evenly" minWidth="800" width="1000">
-          <Box>
+        <Flex justify="space-around">
+          <Box p="5">
             <Image
               src={avatar1}
               alt="Avatar one"
@@ -45,11 +46,17 @@ const About: NextPage = () => {
               height="200"
               className={Styles.img}
             />
-            <Center color="brand.300">
-              <Text>Rosbourne the second</Text>
-            </Center>
+            <Flex
+              flexDirection="column"
+              py={3}
+              color="brand.300"
+              textAlign="center"
+            >
+              <Text textTransform="uppercase">Satoshill</Text>
+              <Text fontSize="sm">Founder & Artist</Text>
+            </Flex>
           </Box>
-          <Box>
+          <Box p="5">
             <Image
               src={avatar2}
               alt="Avatar two"
@@ -57,11 +64,17 @@ const About: NextPage = () => {
               height="200"
               className={Styles.img}
             />
-            <Center color="brand.300">
-              <Text>Rosbourne the second</Text>
-            </Center>
+            <Flex
+              flexDirection="column"
+              py={3}
+              color="brand.300"
+              textAlign="center"
+            >
+              <Text textTransform="uppercase">Mandy Debussy</Text>
+              <Text fontSize="sm">Illustrator</Text>
+            </Flex>
           </Box>
-          <Box>
+          <Box p="5">
             <Image
               src={avatar3}
               alt="Avatar three"
@@ -69,21 +82,33 @@ const About: NextPage = () => {
               height="200"
               className={Styles.img}
             />
-            <Center color="brand.300">
-              <Text>Rosbourne the second</Text>
-            </Center>
+            <Flex
+              flexDirection="column"
+              py={3}
+              color="brand.300"
+              textAlign="center"
+            >
+              <Text textTransform="uppercase">Parzival</Text>
+              <Text fontSize="sm">Blockchain Dev</Text>
+            </Flex>
           </Box>
-          <Box>
+          <Box p="5">
             <Image
-              src={avatar3}
+              src={avatar4}
               alt="Avatar four"
               width="200"
               height="200"
               className={Styles.img}
             />
-            <Center color="brand.300">
-              <Text>Rosbourne the second</Text>
-            </Center>
+            <Flex
+              flexDirection="column"
+              py={3}
+              color="brand.300"
+              textAlign="center"
+            >
+              <Text textTransform="uppercase">CyberGhost</Text>
+              <Text fontSize="sm">Frontend Dev</Text>
+            </Flex>
           </Box>
         </Flex>
       </Center>

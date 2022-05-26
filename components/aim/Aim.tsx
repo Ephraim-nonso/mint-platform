@@ -1,14 +1,13 @@
 import React from "react";
 import { Box, Text, Center, Container } from "@chakra-ui/react";
 import Image from "next/image";
-import displayGIF from "../../assets/GIF1.gif";
-import Link from "next/link";
-import styles from "./Collect.module.css";
+import displayGIF from "../../assets/GIF2.gif";
+import styles from "../collect/Collect.module.css";
 
-const Collect = () => {
+const Aim = () => {
   return (
     <Box>
-      <Box bg="brand.900" height="450">
+      <Box bg="brand.900" height="600">
         <Text
           fontSize="lg"
           px="20"
@@ -18,8 +17,10 @@ const Collect = () => {
           className={styles.text}
           textAlign="center"
         >
-          Rosbourne is a genesis collection of 3 superior races living in the
-          dystopian metropolis of Oakalis City set in a post-apocalyptic world.
+          <span className={styles.block}>We put our community first</span>
+          <span className={styles.block}>
+            We provide additional utility & reward for our holders
+          </span>
         </Text>
 
         <Center py={16}>
@@ -30,4 +31,4 @@ const Collect = () => {
   );
 };
 
-export default Collect;
+export default Aim;

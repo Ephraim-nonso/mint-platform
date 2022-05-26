@@ -1,3 +1,6 @@
 .text {
   font-family: "Retro_Gaming", sans-serif;
 }
+.block {
+  display: block;
+}

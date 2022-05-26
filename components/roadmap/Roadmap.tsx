@@ -7,8 +7,8 @@ import { BsArrowBarRight } from "react-icons/bs";
 const Roadmap: NextPage = () => {
   return (
     <Box
-      w="100%"
-      height="800"
+      w="100"
+      height="900"
       bg="brand.900"
       p={20}
       pt={35}
@@ -16,7 +16,7 @@ const Roadmap: NextPage = () => {
       className={Styles.font}
     >
       <Box>
-        <Center fontSize="6xl" color="brand.300" my="15">
+        <Center fontSize="6xl" color="brand.300" my="20">
           <Text>Roadmap</Text>
         </Center>
       </Box>
