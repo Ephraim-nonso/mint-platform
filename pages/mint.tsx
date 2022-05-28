@@ -1,11 +1,12 @@
 import { NextPage } from "next";
-import React from "react";
+import React, { useContext } from "react";
 import { Box, Center, Heading, Text, Button, Image } from "@chakra-ui/react";
 import Link from "next/link";
 import displayGIF from "../assets/GIF3.gif";
 import Styles from "../styles/Mint.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Web3Context } from "../context/Web3Context";
 // import { Connectors } from "web3-react";
 
 // const { InjectedConnector, NetworkOnlyConnector } = Connectors;
@@ -20,6 +21,25 @@ import "react-toastify/dist/ReactToastify.css";
 
 const mint: NextPage = () => {
   const notify = () => toast("Working well!");
+
+  const { wallet, provider, connect, connectTo, disconnect } =
+    useContext(Web3Context);
+
+  const handleConnect = () => {
+    // if (connect()) {
+    // console.log(connect());
+    //   toast("Working well!");
+    // } else {
+    //   toast("failed");
+    // }
+    console.log(wallet);
+    connect();
+  };
+
+  const handleDisconnect = () => {
+    disconnect();
+  };
+
   return (
     <Box w="100%" height="1200" bg="brand.900" p={5} className={Styles.font}>
       <Center bg="brand.300" h="100" color="white" my={5} borderRadius={5}>
@@ -39,7 +59,7 @@ const mint: NextPage = () => {
       </Center>
 
       <Center>
-        <Button bg="brand.300" color="white" size="lg" onClick={notify}>
+        <Button bg="brand.300" color="white" size="lg" onClick={handleConnect}>
           Connect wallet
         </Button>
       </Center>

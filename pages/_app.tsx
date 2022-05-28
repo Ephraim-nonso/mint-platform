@@ -6,6 +6,7 @@ import { extendTheme } from "@chakra-ui/react";
 import "@fontsource/rubik-wet-paint";
 import "@fontsource/bangers";
 import "@fontsource/merriweather";
+import { Web3Provider } from "../context/Web3Context";
 
 const colors = {
   brand: {
@@ -37,11 +38,13 @@ const theme = extendTheme({ colors, fonts, borderRadius });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ChakraProvider>
+    <Web3Provider>
+      <ChakraProvider theme={theme}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ChakraProvider>
+    </Web3Provider>
   );
 }
 
