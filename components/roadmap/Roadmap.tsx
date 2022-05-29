@@ -33,8 +33,8 @@ const Roadmap: NextPage = () => {
           first. We plan to provide additional utility & reward for our holders.
         </Text>
         <Text mb="10" fontSize="lg">
-          So, once we 100% SOLD OUT, We gonna vibe together. Anyway, here's what
-          you can expect from us & what we're going to do:
+          So, once we 100% SOLD OUT, We gonna vibe together. Anyway, here is
+          what you can expect from us & what we are going to do:
         </Text>
 
         <Flex color="brand.500" mb="10" fontSize="lg">
@@ -58,7 +58,7 @@ const Roadmap: NextPage = () => {
           How does it work:
         </Text>
         <Text mb="10" fontSize="lg">
-          Let’s say you missed degen mint GOBLINTOWN, suddenly floor x5 x10 with
+          Let say you missed degen mint GOBLINTOWN, suddenly floor x5 x10 with
           high volume traded.
         </Text>
 
@@ -66,21 +66,23 @@ const Roadmap: NextPage = () => {
           <Text>
             <BsArrowBarRight size={32} />
           </Text>
-          <Text>We’ll purchase the floor and raffle them to our holders.</Text>
+          <Text>
+            We will purchase the floor and raffle them to our holders.
+          </Text>
         </Flex>
 
         <Flex color="brand.500" mb="10" fontSize="lg">
           <Text>
             <BsArrowBarRight size={32} />
           </Text>
-          <Text>We’ll send the purchased NFTS to their wallets.</Text>
+          <Text>We will send the purchased NFTS to their wallets.</Text>
         </Flex>
 
         <Flex color="brand.500" mb="10" fontSize="lg">
           <Text>
             <BsArrowBarRight size={32} />
           </Text>
-          <Text>Winner decide whether to flip or not. It’s your choice.</Text>
+          <Text>Winner decide whether to flip or not. It is your choice.</Text>
         </Flex>
 
         <Flex color="brand.500" mb="10" fontSize="lg">
@@ -89,7 +91,7 @@ const Roadmap: NextPage = () => {
           </Text>
           <Text>
             New collections – Collaboration with talented Foundation/SuperRare
-            artist The art itself will make your jaw dropped .
+            artist The art itself will make your jaw dropped.
           </Text>
         </Flex>
 
@@ -97,7 +99,7 @@ const Roadmap: NextPage = () => {
           <Text>
             <BsArrowBarRight size={32} />
           </Text>
-          <Text>Free merchandise claim for every Rosbourne owner</Text>
+          <Text>Free merchandise claim for every Rosbourne owner.</Text>
         </Flex>
 
         <Flex color="brand.500" mb="10" fontSize="lg">
@@ -106,7 +108,7 @@ const Roadmap: NextPage = () => {
           </Text>
           <Text>
             Rosbourne Artifacts – Free NFT claim for every Rosbourne owner with
-            burn mechanism for (REDACTED)
+            burn mechanism for (REDACTED).
           </Text>
         </Flex>
 
@@ -115,7 +117,7 @@ const Roadmap: NextPage = () => {
         </Text>
         <Text mb="10" fontSize="lg">
           All we can say is you might want to hold your Rosbourne. Because?
-          Well, We can’t say it now. You guys like to be surprised, right?
+          Well, We cannot say it now. You guys like to be surprised, right?
           Things are just getting more exciting. We have a lot of cool things
           planned for the future.
         </Text>
