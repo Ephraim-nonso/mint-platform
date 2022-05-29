@@ -7,10 +7,10 @@ import styles from "../collect/Collect.module.css";
 const Aim = () => {
   return (
     <Box>
-      <Box bg="brand.900" height="600">
+      <Box bg="brand.900" height="650">
         <Text
           fontSize="lg"
-          px="20"
+          py="35"
           width="500"
           color="brand.300"
           minWidth={500}

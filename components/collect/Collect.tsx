@@ -8,11 +8,10 @@ import styles from "./Collect.module.css";
 const Collect = () => {
   return (
     <Box>
-      <Box bg="brand.900" height="550">
+      <Box bg="brand.900" height="350">
         <Text
           fontSize="lg"
           px="20"
-          pt="20"
           width="500"
           color="brand.300"
           minWidth={500}
@@ -24,7 +23,7 @@ const Collect = () => {
         </Text>
 
         <Center py={16}>
-          <Image src={displayGIF} alt="rosbourne" width={1700} />
+          <Image src={displayGIF} alt="rosbourne" width={1200} height={180} />
         </Center>
       </Box>
     </Box>

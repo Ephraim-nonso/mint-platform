@@ -8,7 +8,7 @@ const Roadmap: NextPage = () => {
   return (
     <Box
       w="100"
-      height="900"
+      height="1550"
       bg="brand.900"
       p={20}
       pt={35}
@@ -23,29 +23,19 @@ const Roadmap: NextPage = () => {
 
       <Box>
         <Text mb="10" fontSize="lg">
-          We believe in underpromise and overdeliver.
+          What the f#ck is ROADMAP??
         </Text>
         <Text mb="10" fontSize="lg">
-          Once we 100% SOLD OUT, here is what we are going to do:
+          We BUILDING! * kmoney voices *
         </Text>
-
-        <Flex color="brand.500" mb="10" fontSize="lg">
-          <Text>
-            <BsArrowBarRight size={32} />
-          </Text>
-          <Text>
-            Level up our NFT community alpha by purchasing exclusive ORIGINS
-            Discord Bots that provide Rosbourne holders with advanced features
-            that deliver sophisticated knowledge and insight.
-          </Text>
-        </Flex>
-
-        <Flex color="brand.500" mb="10" fontSize="lg">
-          <Text>
-            <BsArrowBarRight size={32} />
-          </Text>
-          <Text>Worldwide Webb Land and Arcade Inc. integration</Text>
-        </Flex>
+        <Text mb="10" fontSize="lg">
+          Seriously tho, We believe in underpromise and . We put our community
+          first. We plan to provide additional utility & reward for our holders.
+        </Text>
+        <Text mb="10" fontSize="lg">
+          So, once we 100% SOLD OUT, We gonna vibe together. Anyway, here's what
+          you can expect from us & what we're going to do:
+        </Text>
 
         <Flex color="brand.500" mb="10" fontSize="lg">
           <Text>
@@ -59,17 +49,74 @@ const Roadmap: NextPage = () => {
             <BsArrowBarRight size={32} />
           </Text>
           <Text>
-            Burn mechanism for the next upcoming collections - The art itself
-            will make your jaw dropped
+            Giving away degen/hype NFTS project with volume for you to
+            flip/trade/hold
           </Text>
         </Flex>
 
         <Text mb="10" fontSize="lg">
-          There will be more...
+          How does it work:
         </Text>
         <Text mb="10" fontSize="lg">
-          Things are just getting more exciting. All we can say is that you
-          might want told your Rosbourne, because we have a lot of cool things
+          Let’s say you missed degen mint GOBLINTOWN, suddenly floor x5 x10 with
+          high volume traded.
+        </Text>
+
+        <Flex color="brand.500" mb="10" fontSize="lg">
+          <Text>
+            <BsArrowBarRight size={32} />
+          </Text>
+          <Text>We’ll purchase the floor and raffle them to our holders.</Text>
+        </Flex>
+
+        <Flex color="brand.500" mb="10" fontSize="lg">
+          <Text>
+            <BsArrowBarRight size={32} />
+          </Text>
+          <Text>We’ll send the purchased NFTS to their wallets.</Text>
+        </Flex>
+
+        <Flex color="brand.500" mb="10" fontSize="lg">
+          <Text>
+            <BsArrowBarRight size={32} />
+          </Text>
+          <Text>Winner decide whether to flip or not. It’s your choice.</Text>
+        </Flex>
+
+        <Flex color="brand.500" mb="10" fontSize="lg">
+          <Text>
+            <BsArrowBarRight size={32} />
+          </Text>
+          <Text>
+            New collections – Collaboration with talented Foundation/SuperRare
+            artist The art itself will make your jaw dropped .
+          </Text>
+        </Flex>
+
+        <Flex color="brand.500" mb="10" fontSize="lg">
+          <Text>
+            <BsArrowBarRight size={32} />
+          </Text>
+          <Text>Free merchandise claim for every Rosbourne owner</Text>
+        </Flex>
+
+        <Flex color="brand.500" mb="10" fontSize="lg">
+          <Text>
+            <BsArrowBarRight size={32} />
+          </Text>
+          <Text>
+            Rosbourne Artifacts – Free NFT claim for every Rosbourne owner with
+            burn mechanism for (REDACTED)
+          </Text>
+        </Flex>
+
+        <Text mb="10" fontSize="lg">
+          More to come!
+        </Text>
+        <Text mb="10" fontSize="lg">
+          All we can say is you might want to hold your Rosbourne. Because?
+          Well, We can’t say it now. You guys like to be surprised, right?
+          Things are just getting more exciting. We have a lot of cool things
           planned for the future.
         </Text>
         <Text mb="10" fontSize="lg" color="brand.300">

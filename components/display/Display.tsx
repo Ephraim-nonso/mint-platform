@@ -30,7 +30,7 @@ const Display = () => {
 
       <Box>
         <Center py={16}>
-          <Image src={displayGIF} alt="rosbourne" width={1000} />
+          <Image src={displayGIF} alt="rosbourne" width={500} />
         </Center>
       </Box>
     </Box>

@@ -21,7 +21,7 @@ const data = {
     {
       title: "What is the supply?",
       content: `There are 3k genesis collections of Rosbourne NFTs with an initial mint price of 0.02 ETH each.
-      3 max txn per wallet.`,
+      2 max txn per wallet.`,
     },
     {
       title: "Wen reveal?",
