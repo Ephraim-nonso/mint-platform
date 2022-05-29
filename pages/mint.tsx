@@ -19,7 +19,7 @@ import { Web3Context } from "../context/Web3Context";
 
 // const connectors = { MetaMask, Infura };
 
-const mint: NextPage = () => {
+const mint = () => {
   const notify = () => toast("Working well!");
 
   const { wallet, provider, connect, connectTo, disconnect } =
