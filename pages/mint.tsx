@@ -59,7 +59,7 @@ const Mint = () => {
       </Center>
 
       <Center>
-        <Button bg="brand.300" color="white" size="lg" onClick={notify}>
+        <Button bg="brand.300" color="white" size="lg" onClick={handleConnect}>
           Connect wallet
         </Button>
       </Center>
