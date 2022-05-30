@@ -19,7 +19,7 @@ import { Web3Context } from "../context/Web3Context";
 
 // const connectors = { MetaMask, Infura };
 
-const mint = () => {
+const Mint = () => {
   const notify = () => toast("Working well!");
 
   const { wallet, provider, connect, connectTo, disconnect } =
@@ -84,4 +84,4 @@ const mint = () => {
   );
 };
 
-export default mint;
+export default Mint;
