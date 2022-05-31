@@ -25,7 +25,6 @@ const Display = () => {
 
       <Flex bg="brand.900" flexDirection="column">
         <Card />
-        <Card />
       </Flex>
 
       <Box>
