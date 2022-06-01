@@ -18,14 +18,14 @@ import Ten from "../../assets/23.png";
 // Properties of the second slate
 import First2 from "../../assets/29.png";
 import Second2 from "../../assets/77.png";
-import Third2 from "../../assets/101.png";
+import Third2 from "../../assets/108.png";
 import Four2 from "../../assets/79.png";
 import Five2 from "../../assets/146.png";
-import Six2 from "../../assets/40.png";
+import Six2 from "../../assets/28.png";
 import Seven2 from "../../assets/60.png";
-import Eight2 from "../../assets/6.png";
-import Nine2 from "../../assets/19.png";
-import Ten2 from "../../assets/23.png";
+import Eight2 from "../../assets/80.png";
+import Nine2 from "../../assets/109.png";
+import Ten2 from "../../assets/22.png";
 
 const Card = () => {
   const properties = [

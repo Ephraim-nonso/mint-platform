@@ -8,7 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Web3Context } from "../context/Web3Context";
 import { formatAddress } from "../utils/helper";
-import { Contract, ethers } from "ethers";
+import { BigNumber, Contract, ethers, Signer } from "ethers";
 import { contractAddress } from "../connector/Connector";
 import contractAbi from "../utils/abi.json";
 import { Input } from "@chakra-ui/react";
@@ -27,16 +27,30 @@ const Mint = () => {
     disconnect();
   };
 
+  const handleChange = (e: any) => {
+    setValue(e.target.value);
+  };
+
   const handleMint = async () => {
+    // NFT calculation.
+    const single: number = 0.02;
+    const toBePaid: string = JSON.stringify(single * value);
+    const costOfNFT: BigNumber = ethers.utils.parseEther(toBePaid);
+    console.log(toBePaid, costOfNFT);
+
+    // Contract interaction.
     const myProvider = new ethers.providers.Web3Provider(window.ethereum);
-    const signer = myProvider.getSigner();
-
-    const contractInstance = new Contract(contractAddress, contractAbi, signer);
-
+    const signer: Signer = myProvider.getSigner();
+    const contractInstance: Contract = new Contract(
+      contractAddress,
+      contractAbi,
+      signer
+    );
     const mint = await contractInstance.mint("1", {
-      value: ethers.utils.parseEther("0.02"),
+      value: costOfNFT,
     });
     console.log(mint);
+    console.log(value);
     console.log(contractAddress);
     console.log(contractAbi);
   };
@@ -59,11 +73,16 @@ const Mint = () => {
         </Text>
       </Center>
 
-      <Box py={5} width="200">
+      <Center py={5}>
         {wallet?.address ? (
-          <Input placeholder="Enter the number of NFT to mint..." />
+          <Input
+            placeholder="Enter the number of NFT..."
+            type="number"
+            onChange={handleChange}
+            width="300"
+          />
         ) : null}
-      </Box>
+      </Center>
 
       <Center py={5}>
         {wallet?.address ? (
