@@ -4,28 +4,28 @@ import Image from "next/image";
 import Styles from "../about/About.module.css";
 
 // Properties of the first slate
-import First from "../../assets/123.png";
-import Second from "../../assets/4.png";
-import Third from "../../assets/101.png";
-import Four from "../../assets/79.png";
-import Five from "../../assets/146.png";
-import Six from "../../assets/40.png";
-import Seven from "../../assets/60.png";
-import Eight from "../../assets/6.png";
-import Nine from "../../assets/19.png";
-import Ten from "../../assets/23.png";
+import First from "../../assets/1.png";
+import Second from "../../assets/2.png";
+import Third from "../../assets/3.png";
+import Four from "../../assets/4.png";
+import Five from "../../assets/5.png";
+import Six from "../../assets/6.png";
+import Seven from "../../assets/7.png";
+import Eight from "../../assets/8.png";
+import Nine from "../../assets/9.png";
+import Ten from "../../assets/10.png";
 
 // Properties of the second slate
-import First2 from "../../assets/29.png";
-import Second2 from "../../assets/77.png";
-import Third2 from "../../assets/108.png";
-import Four2 from "../../assets/79.png";
-import Five2 from "../../assets/146.png";
-import Six2 from "../../assets/28.png";
-import Seven2 from "../../assets/60.png";
-import Eight2 from "../../assets/80.png";
-import Nine2 from "../../assets/109.png";
-import Ten2 from "../../assets/22.png";
+import First2 from "../../assets/11.png";
+import Second2 from "../../assets/12.png";
+import Third2 from "../../assets/13.png";
+import Four2 from "../../assets/14.png";
+import Five2 from "../../assets/15.png";
+import Six2 from "../../assets/16.png";
+import Seven2 from "../../assets/17.png";
+import Eight2 from "../../assets/18.png";
+import Nine2 from "../../assets/19.png";
+import Ten2 from "../../assets/20.png";
 
 const Card = () => {
   const properties = [

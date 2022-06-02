@@ -3,8 +3,8 @@ import Web3Modal, { CHAIN_DATA_LIST } from "web3modal";
 import { ethers } from "ethers";
 import { providerOptions, DEFAULT_CHAIN } from "../connector/Connector";
 
-// const DEFAULT_CHAIN_ID = 4;
-const DEFAULT_CHAIN_ID = 42;
+const DEFAULT_CHAIN_ID = 4;
+// const DEFAULT_CHAIN_ID = 42;
 
 export const Web3Context = createContext();
 

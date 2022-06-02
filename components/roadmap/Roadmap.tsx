@@ -8,7 +8,7 @@ const Roadmap: NextPage = () => {
   return (
     <Box
       w="100"
-      height="1550"
+      height="1600"
       bg="brand.900"
       p={20}
       pt={35}
@@ -22,19 +22,32 @@ const Roadmap: NextPage = () => {
       </Box>
 
       <Box>
-        <Text mb="10" fontSize="lg">
+        <Text mb="3" fontSize="lg">
           What the f#ck is ROADMAP??
         </Text>
         <Text mb="10" fontSize="lg">
           We BUILDING! * kmoney voices *
         </Text>
-        <Text mb="10" fontSize="lg">
-          Seriously tho, We believe in underpromise and . We put our community
-          first. We plan to provide additional utility & reward for our holders.
+        <Text mb="3" fontSize="lg">
+          Seriously tho,
+        </Text>
+        <Text mb="3" fontSize="lg">
+          We believe in underpromise and overdeliver.
+        </Text>
+        <Text mb="3" fontSize="lg">
+          We put our community first.
         </Text>
         <Text mb="10" fontSize="lg">
-          So, once we 100% SOLD OUT, We gonna vibe together. Anyway, here is
-          what you can expect from us & what we are going to do:
+          We plan to provide additional utility & reward for our holders.
+        </Text>
+        <Text mb="3" fontSize="lg">
+          So, once we 100% SOLD OUT,
+        </Text>
+        <Text mb="3" fontSize="lg">
+          We gonna vibe together.
+        </Text>
+        <Text mb="10" fontSize="lg">
+          Anyway, here is what you can expect from us & what we are going to do:
         </Text>
 
         <Flex color="brand.500" mb="10" fontSize="lg">
@@ -54,36 +67,25 @@ const Roadmap: NextPage = () => {
           </Text>
         </Flex>
 
-        <Text mb="10" fontSize="lg">
+        <Text mb="3" fontSize="lg" color="brand.500">
           How does it work:
         </Text>
-        <Text mb="10" fontSize="lg">
+        <Text mb="3" fontSize="lg" color="brand.500">
           Let say you missed degen mint GOBLINTOWN, suddenly floor x5 x10 with
           high volume traded.
         </Text>
 
-        <Flex color="brand.500" mb="10" fontSize="lg">
-          <Text>
-            <BsArrowBarRight size={32} />
-          </Text>
-          <Text>
-            We will purchase the floor and raffle them to our holders.
-          </Text>
-        </Flex>
+        <Text mb="3" fontSize="lg" color="brand.500">
+          We will purchase the floor and raffle them to our holders.
+        </Text>
 
-        <Flex color="brand.500" mb="10" fontSize="lg">
-          <Text>
-            <BsArrowBarRight size={32} />
-          </Text>
-          <Text>We will send the purchased NFTS to their wallets.</Text>
-        </Flex>
+        <Text mb="3" fontSize="lg" color="brand.500">
+          We will send the purchased NFTS to their wallets.
+        </Text>
 
-        <Flex color="brand.500" mb="10" fontSize="lg">
-          <Text>
-            <BsArrowBarRight size={32} />
-          </Text>
-          <Text>Winner decide whether to flip or not. It is your choice.</Text>
-        </Flex>
+        <Text mb="10" fontSize="lg" color="brand.500">
+          Winner decide whether to flip or not. It is your choice.
+        </Text>
 
         <Flex color="brand.500" mb="10" fontSize="lg">
           <Text>
@@ -112,14 +114,21 @@ const Roadmap: NextPage = () => {
           </Text>
         </Flex>
 
-        <Text mb="10" fontSize="lg">
+        <Text mb="10" fontSize="lg" color="brand.500">
           More to come!
         </Text>
+        <Text mb="3" fontSize="lg">
+          All we can say is you might want to hold your Rosbourne.
+        </Text>
+        <Text mb="3" fontSize="lg">
+          Because? Well, We cannot say it now.
+        </Text>
+        <Text mb="3" fontSize="lg">
+          You guys like to be surprised, right? Things are just getting more
+          exciting.
+        </Text>
         <Text mb="10" fontSize="lg">
-          All we can say is you might want to hold your Rosbourne. Because?
-          Well, We cannot say it now. You guys like to be surprised, right?
-          Things are just getting more exciting. We have a lot of cool things
-          planned for the future.
+          We have a lot of cool things planned for the future.
         </Text>
         <Text mb="10" fontSize="lg" color="brand.300">
           Last but not least, Genesis is KING.
