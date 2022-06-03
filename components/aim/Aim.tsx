@@ -7,7 +7,7 @@ import styles from "../collect/Collect.module.css";
 const Aim = () => {
   return (
     <Box>
-      <Box bg="brand.900" height="650">
+      <Box bg="brand.900" height="700">
         <Text
           fontSize="lg"
           py="35"

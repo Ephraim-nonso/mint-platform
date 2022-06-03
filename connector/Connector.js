@@ -31,6 +31,21 @@ export const providerOptions = {
 };
 
 export const DEFAULT_CHAIN = {
+  1: {
+    chainId: `0x${Number(1).toString(16)}`,
+    chainName: "Ethereum Mainnet",
+    nativeCurrency: {
+      name: "Ether",
+      symbol: "ETH",
+      decimals: 18,
+    },
+    rpcUrls: [
+      "https://mainnet.infura.io/v3/${INFURA_API_KEY}",
+      "wss://mainnet.infura.io/ws/v3/${INFURA_API_KEY}",
+      "https://api.mycryptoapi.com/eth",
+      "https://cloudflare-eth.com",
+    ],
+  },
   4: {
     chainId: `0x${Number(1).toString(16)}`,
     chainName: "Rinkeby",
