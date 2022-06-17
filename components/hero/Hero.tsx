@@ -9,7 +9,6 @@ import { useRouter } from "next/router";
 const Hero: NextPage = () => {
   const router = useRouter();
   useEffect(() => {
-    console.log("router query", router.query.scroll);
     if (router.query.scroll) {
       //@ts-ignore
       let elem = document.getElementById(router.query.scroll);

@@ -49,10 +49,6 @@ const Mint = () => {
     const mint = await contractInstance.mint("1", {
       value: costOfNFT,
     });
-    console.log(mint);
-    console.log(value);
-    console.log(contractAddress);
-    console.log(contractAbi);
   };
 
   return (
